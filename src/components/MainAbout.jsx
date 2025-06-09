@@ -17,7 +17,7 @@ const MainAbout = () => {
   return (
     <div className='mainAbout'>
       {datos.map((d, idx) => (
-        <Card style={{ width: '18rem' }} key={idx}>
+        <Card className='card' style={{ width: '18rem' }} key={idx}>
           <Card.Body>
             <Card.Title>{d.titulo}:</Card.Title>
             <Card.Text>

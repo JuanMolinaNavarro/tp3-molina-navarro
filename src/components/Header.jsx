@@ -13,7 +13,7 @@ const Header = () => {
                     <Row>
                         <Row className="header-row">
                             <Col className="header-col">
-                                <Link className="header-link" to="/">Home</Link>
+                                <Link className="header-link"  to="/">Home</Link>
                             </Col>
                             <Col className="header-col">
                                 <Link className="header-link" to="/projects">Projects</Link>

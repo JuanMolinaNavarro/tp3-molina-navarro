@@ -5,7 +5,83 @@
 
 }
 
+body.dark-mode a {
+  color: #f1f1f1;
+}
 
+body.light-mode a {
+  color: #212529;
+}
 
+body.dark-mode .card {
+  color: #f1f1f1;
+  background-color: #212529;
+  border-color: #f1f1f1;
+}
 
+body.light-mode .card {
+  color: #212529;
+  background-color: #f1f1f1;
+}
 
+body.dark-mode button{
+  background-color: #212529;
+  color: #f1f1f1;
+}
+
+body.light-mode button{
+  background-color: #f1f1f1;
+  color: #212529;
+}
+
+body.dark-mode button:hover{
+  background-color: #f1f1f1;
+  color: #212529;
+}
+
+body.light-mode button:hover{
+  background-color: #212529;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card:hover{
+  border-color: #0d6efd;
+}
+
+body.light-mode .card:hover{
+  border-color: #0d6efd;
+}
+
+body.dark-mode a:hover {
+  color: #0d6efd;
+}
+
+body.light-mode a:hover {
+  color: #0d6efd;
+}
+
+body.light-mode .enviarMail{
+  background-color: #f1f1f1;
+  border-color: #212529;
+}
+
+body.light-mode .enviarMail:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+body.dark-mode .enviarMail{
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+  background-color: #212529;
+}
+
+body.dark-mode .enviarMail:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #f1f1f1;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
