@@ -8,6 +8,7 @@ const Header = () => {
         <div>
             <div className="header">
             <h1>Juan Martin Molina Navarro</h1>
+            <br />
                 <Container className="header-container">
                     <Row>
                         <Row className="header-row">
@@ -27,6 +28,7 @@ const Header = () => {
                     </Row>
                 </Container>
             </div>
+            <hr />
         </div>
     )
 }
