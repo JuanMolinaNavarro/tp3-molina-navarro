@@ -26,14 +26,14 @@ const MainContact = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         
         <Form.Label>Nombre</Form.Label>
-        <Form.Control type="text" name="name" required></Form.Control>
+        <Form.Control type="text" name="name" placeholder="John Doe" required></Form.Control>
 
       </Form.Group>
 
       <Form.Group>
 
         <Form.Label>Correo Electronico</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control type="email" placeholder="example@mail.com" />
 
       </Form.Group>
 
