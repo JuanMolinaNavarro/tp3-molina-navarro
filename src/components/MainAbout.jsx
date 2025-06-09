@@ -1,11 +1,11 @@
-import React from 'react'
-import { Card } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react';
+import { Card } from 'react-bootstrap';
 
+const MainAbout = () => {
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-    console.log("Cargando datos del JSON...");
-    fetch('../data/about.json')
+    fetch('/data/about.json')
       .then((res) => res.json())
       .then((data) => {
         setDatos(data);
@@ -14,39 +14,25 @@ import { Card } from 'react-bootstrap'
       .catch((error) => console.error("Error cargando JSON:", error));
   }, []);
 
+  return (
+    <div className='mainAbout'>
+      {datos.map((d, idx) => (
+        <Card style={{ width: '18rem' }} key={idx}>
+          <Card.Body>
+            <Card.Title>{d.titulo}:</Card.Title>
+            <Card.Text>
+              
+                <li>{d.item1}</li>
+                <li>{d.item2}</li>
+                <li>{d.item3}</li>
+                <li>{d.item4}</li>
+              
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      ))}
+    </div>
+  );
+};
 
-
-const MainAbout = () => {
-    return (
-        <div className='mainAbout'>
-            {datos.map((d) => (
-
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>4 {d.titulo}:</Card.Title>
-                        <Card.Text>
-                            <ul>
-                                <li>
-                                    {d.item1}
-                                </li>
-                                <li>
-                                    {d.item2}
-                                </li>
-                                <li>
-                                    {d.item3}
-                                </li>
-                                <li>
-                                    {d.item4}
-                                </li>
-                            </ul>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-
-            ))}
-
-        </div>
-    )
-}
-
-export default MainAbout
+export default MainAbout;

@@ -10,7 +10,7 @@ const Footer = () => {
       <a href="https://github.com/JuanMolinaNavarro" target="_blank" rel="noopener">
         <FaGithub size={24} color='black'/>
       </a>
-      <a href="https://linkedin.com/in/usuario" target="_blank" rel="noopener">
+      <a href="https://ar.linkedin.com/in/juan-martin-molina-navarro-b2501321a" target="_blank" rel="noopener">
         <FaLinkedin size={24} color='black' />
       </a>
       <a href="https://twitter.com/usuario" target="_blank" rel="noopener">
