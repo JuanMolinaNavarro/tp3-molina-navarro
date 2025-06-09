@@ -1,0 +1,96 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+h2{
+  font-family: cursive ;
+  font-style: italic;
+}
+
+.links{
+  color: black
+}
+
+.footer {
+  position: relative;           /* para que quede encima de otros elementos */
+  background-color: rgba(255,255,255,0.6); /* fondo blanco al 60% de opacidad */
+  backdrop-filter: blur(10px);  /* desenfoque de 10px */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*Header
+
+/* Header general */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/* Contenedor interno para centrar y limitar ancho */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fila: alineación vertical y espacio */
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
+/* Cada columna: centrar horizontalmente */
+.header-col {
+  display: flex;
+  justify-content: center;
+}
+
+/* Enlaces */
+.header-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--bs-dark);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.header-link:hover {
+  color: var(--bs-primary);
+  transform: translateY(-2px);
+}
+
+.main{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+}
