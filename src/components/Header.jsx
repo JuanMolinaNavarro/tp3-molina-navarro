@@ -21,7 +21,7 @@ const Header = () => {
                             <Col className="header-col">
                                 <Link className="header-link" to="/aboutme">About Me</Link>
                             </Col>
-                            <Col>
+                            <Col className="header-col">
                                 <Link className='header-link' to='/contact'>Contact</Link>
                             </Col>
                         </Row>

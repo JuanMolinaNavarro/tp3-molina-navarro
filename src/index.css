@@ -101,3 +101,12 @@ h2 {
   grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
   gap: 16px;
 }
+
+a{
+  color: black;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #0d6efd;
+}

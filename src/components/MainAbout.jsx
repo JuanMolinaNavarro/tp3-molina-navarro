@@ -3,7 +3,6 @@ import { Card } from 'react-bootstrap'
 
   const [datos, setDatos] = useState([]);
 
-  // Se ejecuta solo UNA VEZ cuando el componente se monta
   useEffect(() => {
     console.log("Cargando datos del JSON...");
     fetch('../data/about.json')
@@ -13,7 +12,7 @@ import { Card } from 'react-bootstrap'
         console.log("Datos cargados");
       })
       .catch((error) => console.error("Error cargando JSON:", error));
-  }, []); // <--- Este array vacío hace que se ejecute solo una vez
+  }, []);
 
 
 
